@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/insta"
+            android:icon="@drawable/ic_insta"
+            android:title="@string/tab1" />
+
+        <item
+            android:id="@+id/nav_restaurant"
+            android:icon="@drawable/ic_restaurant"
+            android:title="@string/tab2" />
+
+        <item
+            android:id="@+id/nav_attraction"
+            android:icon="@drawable/ic_attraction"
+            android:title="@string/tab3" />
+
+        <item
+            android:id="@+id/events"
+            android:icon="@drawable/ic_events"
+            android:title="@string/tab4" />
+
+    </group>
+</menu>

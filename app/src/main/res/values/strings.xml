@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+    <string name="welcome">Welcome to Lagos</string>
+    <string name="slogan">Èkó ò ní bàjé</string>
+    <string name="tab3">Attractions</string>
+    <string name="tab2">Restaurants</string>
+    <string name="tab4">Events</string>
+    <string name="tab1">Insta Worthy</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="insta1">African Artists\' Foundation</string>
+    <string name="insta2">Craft Gourmet</string>
+    <string name="insta3">The House Lagos</string>
+    <string name="insta4">The Wings EventsSpace</string>
+
+    <string name="restaurant1">NOK by Alara</string>
+    <string name="restaurant2">Hans &amp; Rene</string>
+    <string name="restaurant3">La Brioche</string>
+    <string name="restaurant4">The Alchemist Bar</string>
+
+    <string name="attract1">Nike Art Centre</string>
+    <string name="attract2">Balogun Market</string>
+    <string name="attract3">Lekki Resort</string>
+    <string name="attract4">The WaterSide Ikoyi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
