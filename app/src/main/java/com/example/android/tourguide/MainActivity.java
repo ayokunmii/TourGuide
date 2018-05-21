@@ -1,33 +1,23 @@
 package com.example.android.tourguide;
 
-import android.app.Fragment;
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Build;
-import android.support.annotation.Nullable;
+import android.os.Bundle;
 import android.support.annotation.RequiresApi;
-import android.support.design.internal.NavigationMenu;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.graphics.drawable.DrawerArrowDrawable;
 import android.view.MenuItem;
-import android.widget.Toolbar;
+import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
+    LinearLayout removeViews;
     private DrawerLayout drawer;
     private android.support.v7.widget.Toolbar toolbar;
     private NavigationView navView;
     private ActionBarDrawerToggle drawerToggle;
-
-
-
-
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -47,19 +37,17 @@ public class MainActivity extends AppCompatActivity {
         // Find our nav view
         navView = (NavigationView) findViewById(R.id.nav_view);
         setupDrawerContent(navView);
-
-
-
+        navView.bringToFront();
+        removeViews = (LinearLayout) findViewById(R.id.main_screen_design);
 
 
     }
 
 
-
     private ActionBarDrawerToggle setupDrawerToggle() {
         // NOTE: Make sure you pass in a valid toolbar reference.  ActionBarDrawToggle() does not require it
         // and will not render the hamburger icon without it.
-        return new ActionBarDrawerToggle(this, drawer, toolbar, R.string.drawer_open,  R.string.drawer_close);
+        return new ActionBarDrawerToggle(this, drawer, toolbar, R.string.drawer_open, R.string.drawer_close);
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
@@ -74,10 +62,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void selectDrawerItem(MenuItem menuItem) {
+
+        removeViews.removeAllViewsInLayout();
         // Create a new fragment and specify the fragment to show based on nav item clicked
         android.support.v4.app.Fragment fragment = null;
         Class fragmentClass;
-        switch(menuItem.getItemId()) {
+        switch (menuItem.getItemId()) {
             case R.id.insta:
                 fragmentClass = InstaFragment.class;
                 break;
@@ -107,8 +97,8 @@ public class MainActivity extends AppCompatActivity {
 
         // Highlight the selected item has been done by NavigationView
         menuItem.setChecked(true);
-        // Set action bar title
-        setTitle(menuItem.getTitle());
+
+
         // Close the navigation drawer
         drawer.closeDrawers();
     }
@@ -134,5 +124,19 @@ public class MainActivity extends AppCompatActivity {
         super.onConfigurationChanged(newConfig);
         // Pass any configuration change to the drawer toggles
         drawerToggle.onConfigurationChanged(newConfig);
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        int count = getFragmentManager().getBackStackEntryCount();
+
+        if (count == 0) {
+            super.onBackPressed();
+
+        } else {
+            getFragmentManager().popBackStack();
+        }
+
     }
 }

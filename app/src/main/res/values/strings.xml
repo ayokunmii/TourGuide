@@ -11,19 +11,157 @@
     <string name="drawer_close">Close navigation drawer</string>
 
     <string name="insta1">African Artists\' Foundation</string>
-    <string name="insta2">Craft Gourmet</string>
-    <string name="insta3">The House Lagos</string>
-    <string name="insta4">The Wings EventsSpace</string>
+    <string name="insta1_info">AAF offers all kinds of artists a community where they han meet other
+        artists to collaborate and share experiences. Shows and exhibitions are also hosted in the centre throughout the year,
+        so there is always a reason to drop by!</string>
+    <string name="insta1_phone">+2348097713079</string>
+    <string name="insta1_address">3B, Isiola Oyekan Close\nOff Adeleke Adedoyin Street\nOff Kofo Abayomi Street\n
+        Victoria Island\nLagos</string>
+    <string name="insta1_socials">aaf_lagos</string>
+    <string name="insta1_geo">geo:6.434090, 3.418044</string>
+    <string name="insta1_website">https://www.instagram.com/explore/locations/280917351/african-artists-foundation/</string>
 
-    <string name="restaurant1">NOK by Alara</string>
+    <string name="insta2">Craft Gourmet</string>
+    <string name="insta2_info">Popping in on your lunch break, need a quick bite or want an exquisite three course meal?\n
+        Craft gourmet has got you covered! Their meals are inspired by countries all over Africa.\nIf you happen to stop by,
+        try their Chicken Yassa.  </string>
+    <string name="insta2_phone">+2347032652069</string>
+    <string name="insta2_address">Mega Plaza, 3rd Floor,\n14 Idowu Martins Street,\nLagos</string>
+    <string name="insta2_socials">craftgourmet</string>
+    <string name="insta2_geo">geo:6.433337, 3.420474 </string>
+    <string name="insta2_website">https://www.instagram.com/craftgourmet/?hl=en</string>
+
+    <string name="insta3">The House Lagos</string>
+    <string name="insta3_info">The House prides itself on being a comfortable space where people can come to unwind
+        whilst having good food and entertainment.\nThe house is on a mission to help people socialise at slower pace
+        and live in the present more.</string>
+    <string name="insta3_phone">+2349082919773</string>
+    <string name="insta3_address">4 Aj Marinho drive,\n Victoria Island,\nLagos</string>
+    <string name="insta3_socials">thehouselagos</string>
+    <string name="insta3_geo">geo:6.427412, 3.432003</string>
+    <string name="insta3_website">https://www.instagram.com/thehouselagos/?hl=en</string>
+
+    <string name="insta4">The Wings EventsSpace</string>
+    <string name="insta4_info">An event &amp; performance venue like no other!\nNo matter the scale of your event,be assured there
+        would be a suitable package for you at The Wings.\nWith picturesque view of the river, this is definitely a top spot to
+        host events and meetings.</string>
+    <string name="insta4_phone">+23412702400</string>
+    <string name="insta4_address">Ozumba Mbadiwe,\n Lagos</string>
+    <string name="insta4_socials">thewingseventspace</string>
+    <string name="insta4_geo">geo:6.436410, 3.416221</string>
+    <string name="insta4_website">https://www.instagram.com/thewingseventspace/</string>
+
+    <string name="restaurant1">NOK by Alára</string>
+    <string name="restaurant1_info">NOK by Alára prides itself in being a Pan-African restaurant and it sure lives up to
+        this claim.\nFrom the interior design to the cookware and the food served, NOK screams Pan-African.</string>
+    <string name="restaurant1_phone">+2349085614815</string>
+    <string name="restaurant1_address">12A Akin Olugbade Street,\nLagos</string>
+    <string name="restaurant1_socials">nokbyalara</string>
+    <string name="restaurant1_geo">geo:6.430633, 3.422243</string>
+    <string name="restaurant1_website">https://www.instagram.com/nokbyalara/?hl=en</string>
+
     <string name="restaurant2">Hans &amp; Rene</string>
+    <string name="restaurant2_info">This is classic desert place in Lagos. Whether you want a classic gelato or one infused with
+        local produce, Hans &amp; Rene has got you covered.\nVegan? They also have you covered!\nBe sure to try their agbalumo
+        (cherry) gelato.</string>
+    <string name="restaurant2_phone">+2348087773333</string>
+    <string name="restaurant2_address">1 Ozumba Mbadiwe,\nLagos</string>
+    <string name="restaurant2_socials">hansandrene</string>
+    <string name="restaurant2_geo">geo:6.436803, 3.417230</string>
+    <string name="restaurant2_website">https://www.instagram.com/hansandrene/?hl=en</string>
+
     <string name="restaurant3">La Brioche</string>
-    <string name="restaurant4">The Alchemist Bar</string>
+    <string name="restaurant3_info">La Brioche is a good place to go to brunch. They serve English and continental dishes.\n
+        If you ever want to host a brunch,thismght just be the perfect venue for you as their private rooms have stunning flower
+        garden and wonderland themes.</string>
+    <string name="restaurant3_phone">+23412951299</string>
+    <string name="restaurant3_address">22b Muse Yardua,\nVictoria Island,\nLagos</string>
+    <string name="restaurant3_socials">labriocheng</string>
+    <string name="restaurant3_geo">geo:6.432028, 3.417495</string>
+    <string name="restaurant3_website">https://www.instagram.com/labriocheng/?hl=en</string>
+
+    <string name="restaurant4">South Eatery &amp; Social House</string>
+    <string name="restaurant4_info">South Eatery &amp; Social House makes food and drinks from fresh produce.\n
+        From confort food to quick bites and tapas, they cover it all. They also make delicious cocktails. </string>
+    <string name="restaurant4_phone">+2349093333385</string>
+    <string name="restaurant4_address">92b Younis Bashorun Street,\nVictoria Island\nLagos</string>
+    <string name="restaurant4_socials">south_social</string>
+    <string name="restaurant4_geo">geo:6.429771, 3.436450</string>
+    <string name="restaurant4_website">https://www.instagram.com/south_social/</string>
 
     <string name="attract1">Nike Art Centre</string>
+    <string name="attract1_info">The gallery is infact the largest in West Africa and it shows beautiful artistic expressions
+        by artists some of which are available for purchase.</string>
+    <string name="attract1_phone">+2348034096656</string>
+    <string name="attract1_address">2 Elegushi Beach Road,\n Lekki Phase I, Lekki,\nLagos</string>
+    <string name="attract1_socials">nikeartgallery</string>
+    <string name="attract1_geo">geo:6.438109, 3.515340</string>
+    <string name="attract1_website">https://www.instagram.com/nikeartgallery/?hl=en</string>
+
     <string name="attract2">Balogun Market</string>
-    <string name="attract3">Lekki Resort</string>
+    <string name="attract2_info">This market is a staple location in Lagos.\nIt sprawls over several streets and most
+        vendors sell traditional Nigeria, fabrics, shoes and various clothing.</string>
+    <string name="attract2_phone">+2348024986464</string>
+    <string name="attract2_address">Balogun St,\nLagos Island,\nLagos</string>
+    <string name="attract2_socials"></string>
+    <string name="attract2_geo">geo:6.457419, 3.384809</string>
+    <string name="attract2_website"></string>
+
+    <string name="attract3">Lekki Conservative Centre</string>
+    <string name="attract3_info">The centre alongside with it beinga an abundance of plant and animale life,
+        is also close to both Lekki and Lagos Lagoon.\nYou can expect to see animals such as crcodiles, monkeys, snakes and
+        rare birds during your visit</string>
+    <string name="attract3_phone">+2349065460479</string>
+    <string name="attract3_address">19 Lekki - Epe Expy,\nLekki Penninsula II,\nLagos</string>
+    <string name="attract3_socials"></string>
+    <string name="attract3_geo">geo:6.441558, 3.535793</string>
+    <string name="attract3_website"></string>
+
     <string name="attract4">The WaterSide Ikoyi</string>
+    <string name="attract4_info">Overlook the beautiful river while having wonderful cocktails and tapas.
+        This is a good location to hang out with friends, catch up or for meetings.
+        They also have private space you can hire for your special events.</string>
+    <string name="attract4_phone">+2348174683000</string>
+    <string name="attract4_address">22 Awolowo Rd,\nIkoyi,\nLagos</string>
+    <string name="attract4_socials">thewatersideikoyilagos</string>
+    <string name="attract4_geo">geo:6.443449, 3.408778</string>
+    <string name="attract4_website">https://www.instagram.com/thewatersideikoyilagos/</string>
+
+    <string name="event1">Sip and Dip</string>
+    <string name="event1_info">Sip and Dip is a paint party like no other at The Backyard! Come into one of the sessions
+        to have a relaxing day painting and socialising with new people.</string>
+    <string name="event1_phone">+2349077002000</string>
+    <string name="event1_address">4B Musa Yar\'adua Street,\nLagos</string>
+    <string name="event1_socials">thebackyard.lagos</string>
+    <string name="event1_geo">geo:6.434306, 3.416210</string>
+    <string name="event1_website">https://www.instagram.com/thebackyard.lagos/?hl=en</string>
+
+    <string name="event2">Fela and the Kalakuta Queens</string>
+    <string name="event2_info">This musical show is at Terra Kulture all about the legendary Fela Anikulapo Kuti
+        and the women who supported him and help him in the process of getting to where he was.</string>
+    <string name="event2_phone">+23412700588</string>
+    <string name="event2_address">Plot 1376, Tiamiyu Savage,\nVictoria Island,\nLagos</string>
+    <string name="event2_socials">terrakulture</string>
+    <string name="event2_geo">geo:6.425051, 3.426865</string>
+    <string name="event2_website">https://www.instagram.com/terrakulture/</string>
+
+    <string name="event3">After Dark Friday</string>
+    <string name="event3_info">Perfect way to end your night out - ADF occurs every Friday at Hard Rock Cafe featuring a different DJ
+        each week. One thing is guaranteed;you will be entertained with good music and have an amazing night!</string>
+    <string name="event3_phone">+2349081988888</string>
+    <string name="event3_address">3 &amp; 4, Block XVI, Oniru Estate,\nVictoria Island,\nLagos</string>
+    <string name="event3_socials">hrclagos</string>
+    <string name="event3_geo">geo:6.422996, 3.444322</string>
+    <string name="event3_website">https://www.instagram.com/hrclagos/?hl=en</string>
+
+    <string name="event4">Movies on the Beach</string>
+    <string name="event4_info">This is the latest from Hard Rock Cafe! Enjoy a relaxing movie whilst
+        lounging on the beach sipping one of HRC\'s delicious cocktail and whilst munching on shawarma.</string>
+    <string name="event4_phone">+2349081988888</string>
+    <string name="event4_address">3 &amp; 4, Block XVI, Oniru Estate,\nVictoria Island,\nLagos</string>
+    <string name="event4_socials">hrclagos</string>
+    <string name="event4_geo">geo:6.422996, 3.444322</string>
+    <string name="event4_website">https://www.instagram.com/hrclagos/?hl=en</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

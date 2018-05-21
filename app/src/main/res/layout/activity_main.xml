@@ -2,19 +2,13 @@
 
 <android.support.v4.widget.DrawerLayout
 
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.android.tourguide.MainActivity">
-
-
-    <FrameLayout
-        android:id="@+id/content_frame"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -23,65 +17,75 @@
         android:background="?attr/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/main_screen_design"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/main_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_page" />
+
+
+            <ImageView
+                android:id="@+id/main_image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scaleType="fitEnd"
+                android:src="@drawable/home_page" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/welcome"
+                    android:textColor="@android:color/white"
+                    android:textSize="45sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:text="@string/slogan"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
 
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:itemTextColor="@android:color/darker_gray"
-        app:menu="@menu/drawer_view"
-        app:itemTextAppearance="@style/nav_bar"
-        app:itemIconTint="@android:color/holo_red_dark"
-        app:headerLayout="@layout/toolbar"
         android:contextClickable="true"
-        />
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
-        <ImageView
-            android:id="@+id/main_image"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/home_page"/>
-
-
-        <ImageView
-            android:id="@+id/main_image1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-           android:scaleType="fitEnd"
-            android:src="@drawable/home_page"/>
-
-
-            />
-    </RelativeLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="bottom|center">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/welcome"
-        android:textSize="45sp"
-        android:textColor="@android:color/white"
-        android:fontFamily="sans-serif-condensed"
-        android:textStyle="italic"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/slogan"
-        android:textSize="25sp"
-        android:textColor="@android:color/holo_red_dark"
-
-        />
-</LinearLayout>
-
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/toolbar"
+        app:itemIconTint="@android:color/holo_red_dark"
+        app:itemTextAppearance="@style/nav_bar"
+        app:itemTextColor="@android:color/darker_gray"
+        app:menu="@menu/drawer_view" />
 </android.support.v4.widget.DrawerLayout>

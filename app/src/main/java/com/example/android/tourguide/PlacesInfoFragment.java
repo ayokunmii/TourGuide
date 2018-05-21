@@ -7,6 +7,8 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,9 +51,12 @@ public class PlacesInfoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+
         final View rootView = inflater.inflate(R.layout.places_info, container, false);
         Context context = getActivity();
+        rootView.bringToFront();
 
+        //initialising variables
         placeName = (TextView) rootView.findViewById(R.id.name_of_location);
         desciption = (TextView) rootView.findViewById(R.id.description);
         photo = (ImageView) rootView.findViewById(R.id.image);
@@ -66,6 +71,7 @@ public class PlacesInfoFragment extends Fragment {
         Bundle bundle = this.getArguments();
 
         if (bundle != null) {
+            //getting all variables from prev. fragment
             String a = bundle.getString(NAME);
             int b = bundle.getInt(PHOTO);
             String c = bundle.getString(INFO);
@@ -75,6 +81,7 @@ public class PlacesInfoFragment extends Fragment {
             g = bundle.getString(GEO);
             h = bundle.getString(WEB);
 
+            //setting the variables to be used in this fragment
             placeName.setText(String.valueOf(a));
             photo.setImageResource(b);
             desciption.setText(String.valueOf(c));
@@ -83,28 +90,9 @@ public class PlacesInfoFragment extends Fragment {
             socials.setText(String.valueOf(f));
         }
 
-        final ArrayList<Places> fulldescript = new ArrayList<Places>();
-        fulldescript.add(new Places(getString(R.string.attract1), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.attract2), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.attract3), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.attract4), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.attract1), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.attract2), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.attract3), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.attract4), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.attract1), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.attract2), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.attract3), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.attract4), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.restaurant1), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.restaurant2), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.restaurant3), R.mipmap.ic_sample));
-        fulldescript.add(new Places(getString(R.string.restaurant4), R.mipmap.ic_sample));
-        
-        PlacesInfoAdapter adapter = new PlacesInfoAdapter(getActivity(), fulldescript);
-        
         
 
+        //creating intents for the variables
         phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -118,16 +106,12 @@ public class PlacesInfoFragment extends Fragment {
         address.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Create a Uri from an intent string. Use the result to create an Intent.
-                Uri gmmIntentUri = Uri.parse(g);
 
+                Uri gmmIntentUri = Uri.parse(g);
                 Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
                 mapIntent.setPackage("com.google.android.apps.maps");
                 startActivity(mapIntent);
-                // Attempt to start an activity that can handle the Intent
-                if (mapIntent.getComponent() != null) {
 
-                }
             }
 
         });
@@ -140,10 +124,12 @@ public class PlacesInfoFragment extends Fragment {
             }
         });
 
+        //NOTE: backbutton returns prev fragment but shows a blank screen for the listView fragments as the views here have
+        // been removed when PlacesInfoFragment was opened
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                onBackPressed();
             }
         });
 
@@ -161,25 +147,11 @@ public class PlacesInfoFragment extends Fragment {
 
     }
 
-    public  Intent newInstagramProfileIntent(PackageManager pm, String url) {
-        final Intent intent = new Intent(Intent.ACTION_VIEW);
-        try {
-            if (pm.getPackageInfo("com.instagram.android", 0) != null) {
-                if (url.endsWith("/")) {
-                    url = url.substring(0, url.length() - 1);
-                }
-                final String username = url.substring(url.lastIndexOf("/") + 1);
-                intent.setData(Uri.parse("http://instagram.com/_u/" + username));
-                intent.setPackage("com.instagram.android");
-                return intent;
-            } else {
-                Intent i = new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://www.stackoverflow.com"));
-                startActivity(i);
-            }
-        } catch (PackageManager.NameNotFoundException ignored) {
-        }
-        intent.setData(Uri.parse(url));
-        return intent;
+    public void onBackPressed()
+    {
+        FragmentManager fm = getActivity().getSupportFragmentManager();
+        fm.popBackStack();
+
     }
 
 }
