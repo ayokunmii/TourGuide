@@ -31,20 +31,28 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp">
+
+            <ImageView
+                android:id="@+id/main_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_page"
+                android:scaleType="fitXY"
+                />
 
             <ImageView
                 android:id="@+id/main_image"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/home_page" />
-
+                android:layout_height="match_parent"
+                android:src="@drawable/home_page"
+                />
 
             <ImageView
                 android:id="@+id/main_image1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
                 android:scaleType="fitEnd"
                 android:src="@drawable/home_page" />
 
